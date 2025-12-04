@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+🐾 Pet Green - Landing Page Veterinária
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma Landing Page moderna, responsiva e focada em conversão para clínica veterinária e Pet Shop.
 
-Currently, two official plugins are available:
+🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="1903" height="928" alt="image" src="https://github.com/user-attachments/assets/befc472f-b842-49aa-aeba-ae12f080777c" />
 
-## React Compiler
+🚀 Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto foi desenvolvido com o objetivo de criar uma presença digital sólida para a Pet Green, uma clínica veterinária local. O foco principal foi a Experiência do Usuário (UX), garantindo uma navegação fluida, mobile-first e com altas taxas de conversão para agendamentos via WhatsApp.
 
-## Expanding the ESLint configuration
+🎯 Principais Desafios & Soluções
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Como desenvolvedor Front-end, meus desafios técnicos neste projeto foram:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Arquitetura Single File Otimizada: Todo a lógica, estados e componentes foram orquestrados em um único arquivo funcional (App.tsx) sem perder a legibilidade e manutenibilidade, utilizando interfaces TypeScript bem definidas.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Micro-interações de UI: Implementação de uma Navbar Dinâmica que reage ao scroll (efeito "Zoom Out" e Blur) para maximizar a área de visualização de conteúdo.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Performance: Uso de IntersectionObserver para criar animações de "Scroll Reveal" leves, sem depender de bibliotecas pesadas de animação.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Integração WhatsApp Inteligente: Criação de uma lógica de formulário que não apenas redireciona, mas pré-formata uma mensagem completa com os dados do cliente e identifica intenção de envio de arquivos.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✨ Funcionalidades
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📱 Design Responsivo (Mobile First): Layout adaptável para celulares, tablets e desktops.
+
+🎨 Animações Fluidas: Fade-in e Translate-Y conforme o usuário rola a página.
+
+🧊 Navbar Glassmorphism: Efeito de vidro com redimensionamento inteligente ao rolar.
+
+📞 Agendamento via WhatsApp: Botão de ação (CTA) direto com mensagem personalizada.
+
+📂 UX de Upload: Interface amigável para simulação de envio de fotos de referência.
+
+📍 Mapa Interativo: Seção de localização integrada visualmente.
+
+🛠️ Tecnologias Utilizadas
+
+React JS: Biblioteca para construção da interface.
+
+TypeScript: Para tipagem estática e código mais seguro.
+
+Tailwind CSS (v3): Para estilização utilitária e responsividade rápida.
+
+Lucide React: Para ícones leves e modernos.
+
+Vite: Build tool para desenvolvimento rápido.
+
+📦 Como rodar o projeto
+
+# Clone este repositório
+$ git clone [https://github.com/seu-usuario/pet-green.git](https://github.com/seu-usuario/pet-green.git)
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd pet-green
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+
+👨‍💻 Autor
+
+Desenvolvido por [Lucas Santos].
+
+Este projeto faz parte do meu portfólio como Desenvolvedor Front-end.
